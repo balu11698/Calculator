@@ -1,0 +1,150 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center
+}
+.calculatorWrapper {
+    justify-content: space-between;
+    /* margin: 0% 30%; */
+    flex-wrap: wrap;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculatorDataWrapper {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* margin: 0% 30%; */
+    flex-wrap: wrap;
+    background-color: lightblue;
+    display: grid;
+    margin: 0 auto;
+}
+.header {grid-area: header;}
+.userInput {grid-area: userInput}
+.result {grid-area: result}
+.plus {grid-area: plus;}
+.minus {grid-area: minus;}
+.multiplication {grid-area: multiplication;}
+.division {grid-area: division;}
+.one {grid-area: one;}
+.two {grid-area: two;}
+.three {grid-area: three;}
+.four {grid-area: four;}
+.five {grid-area: five;}
+.six {grid-area: six;}
+.seven {grid-area: seven;}
+.eight {grid-area: eight;}
+.nine {grid-area: nine;}
+.zero {grid-area: zero;}
+.dot {grid-area: dot;}
+.clear {grid-area: clear;}
+.equal {grid-area: equal;}
+.calculatorDataWrapper {
+    display: grid;
+    grid-template-areas:
+        'plus minus multiplication division'
+        'one two three equal'
+        'four five six equal'
+        'seven eight nine equal'
+        'zero dot clear equal';
+    grid-gap: 8px;
+}
+.displayWrapper {
+    display: flex;
+    flex-direction: column;
+}
+.operator,.clear,.equal {
+    width: 25px;
+    background-color: orange;
+    border-radius: 5px;
+    border-color: orange;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.number, .dot {
+    width: 25px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* .header {
+    display: flex;
+    justify-content: center;
+}
+.displayWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.numbersWrapper {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+.numbers-div {
+    width: 33.33%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.numbers {
+    width: 25px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.operators-div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.operatorsWrapper {
+    display: flex;
+    height: 60px;
+}
+.numbersWrapper-div {
+    display: flex;
+    align-items: center;
+}
+button.equal {
+    width: 25px;
+    background-color: orange;
+    border-radius: 5px;
+    border-color: orange;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+button.operators {
+    width: 25px;
+    background-color: orange;
+    border-radius: 5px;
+    border-color: orange;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.equalWrapper {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+input[type="text"] {
+    border: none;
+    margin: 0% 2%;
+    text-align: right;
+}
+.numbers-div:focus{
+    background-color: red;
+} */
